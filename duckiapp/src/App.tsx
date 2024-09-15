@@ -44,17 +44,22 @@ function App() {
 
         {/* Main Content */}
         <nav className="absolute top-0 left-0 right-0 py-6 px-8 flex justify-between items-center">
-          <div className="text-3xl font-semibold transition-transform transform hover:scale-110 cursor-pointer">
-            ducki
-          </div>
-          <div className="space-x-6">
-            <button className="text-gray-700 hover:text-gray-900 transition-colors duration-300">About</button>
-            <button className="text-gray-700 hover:text-gray-900 transition-colors duration-300">Our Team</button>
-            <button className="px-4 py-2 rounded-full bg-yellow-400 text-white hover:bg-yellow-500 transition-colors duration-300">
-              Get Started
-            </button>
-          </div>
-        </nav>
+  <div className="text-3xl font-semibold transition-transform transform hover:scale-110 cursor-pointer">
+    ducki
+  </div>
+  <div className="space-x-6">
+    <button onClick={() => document.getElementById('features')?.scrollIntoView({ behavior: 'smooth' })} className="text-gray-700 hover:text-gray-900 transition-colors duration-300">
+      Learn More
+    </button>
+    <button onClick={() => document.getElementById('team')?.scrollIntoView({ behavior: 'smooth' })} className="text-gray-700 hover:text-gray-900 transition-colors duration-300">
+      Our Team
+    </button>
+    <button className="px-4 py-2 rounded-full bg-yellow-400 text-white hover:bg-yellow-500 transition-colors duration-300">
+      Get Started
+    </button>
+  </div>
+</nav>
+
 
         <div className="flex flex-col items-center text-center z-10">
           <h1 className="text-6xl font-bold text-gray-800">
@@ -67,9 +72,6 @@ function App() {
             <button className="px-6 py-3 bg-yellow-500 text-white rounded-lg hover:bg-yellow-600 transition-all duration-300">
               Add to Your IDE
             </button>
-            <button className="px-6 py-3 bg-transparent border border-yellow-500 text-yellow-500 rounded-lg hover:bg-yellow-500 hover:text-white transition-all duration-300">
-              Learn More
-            </button>
           </div>
         </div>
 
@@ -80,7 +82,7 @@ function App() {
       </div>
 
       {/* Features Page */}
-      <div className="relative min-h-screen bg-[#fff5c3] text-black flex flex-col justify-center items-center snap-start">
+      <div id="features" className="relative min-h-screen bg-[#fff5c3] text-black  flex flex-col justify-center items-center snap-start">
   <h2 className="text-5xl font-bold text-center mt-20">Features</h2>
   <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 max-w-7xl mx-auto mt-12 px-8">
     
