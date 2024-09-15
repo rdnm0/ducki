@@ -1,8 +1,6 @@
   import React, { useState, useEffect } from 'react';
 
-
-
-  function App() {
+function App() {
     const words = ['that code', 'those lines', 'that syntax error'];
     const [currentWord, setCurrentWord] = useState('');
     const [wordIndex, setWordIndex] = useState(0);
@@ -50,6 +48,9 @@
       ducki
     </div>
     <div className="space-x-6">
+    <button onClick={() => document.getElementById('mission')?.scrollIntoView({ behavior: 'smooth' })} className="text-gray-700 hover:text-gray-900 transition-colors duration-300">
+        Our Mission
+      </button>
       <button onClick={() => document.getElementById('features')?.scrollIntoView({ behavior: 'smooth' })} className="text-gray-700 hover:text-gray-900 transition-colors duration-300">
         Learn More
       </button>
@@ -82,6 +83,13 @@
             ducki was founded by rohan dhanam and aryan vasudevan
           </p>
         </div>
+        {/* Our Mission Page */}
+      <div id="mission" className="relative min-h-screen bg-[#fff5c3] text-gray-900 flex flex-col justify-center items-center snap-start">
+        <h2 className="text-5xl font-bold mt-20">Our Mission</h2>
+        <p className="text-lg max-w-2xl text-center mt-8">
+          Ducki aims to simplify coding for developers by providing instant explanations and insights into complex code, making debugging more efficient and coding easier. Our mission is to integrate AI into developer tools, enhancing productivity through real-time code analysis and context-aware suggestions.
+        </p>
+      </div>
         
 
         {/* Features Page */}
@@ -160,6 +168,7 @@
       </div>
 
     </div>
+    
   </div>
 
   </div>
