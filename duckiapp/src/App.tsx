@@ -80,47 +80,60 @@ function App() {
       </div>
 
       {/* Features Page */}
-      <div className="relative min-h-screen bg-[#fff5c3] text-gray-900 flex flex-col justify-center items-center snap-start">
-        <h2 className="text-4xl font-bold text-center mt-20">Features</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 max-w-7xl mx-auto mt-12 px-8">
-          <div className="feature-card p-6 bg-white rounded-lg shadow-lg">
-            <h3 className="text-2xl font-semibold mb-4">Real-Time Code Explanation</h3>
-            <p className="text-gray-700">
-              Ducki AI instantly analyzes your code and provides real-time explanations when you hover over problematic or complex code.
-            </p>
-          </div>
-          <div className="feature-card p-6 bg-white rounded-lg shadow-lg">
-            <h3 className="text-2xl font-semibold mb-4">Context-Aware Suggestions</h3>
-            <p className="text-gray-700">
-              Powered by advanced natural language processing (NLP) models, Ducki understands the context of your code to offer relevant suggestions.
-            </p>
-          </div>
-          <div className="feature-card p-6 bg-white rounded-lg shadow-lg">
-            <h3 className="text-2xl font-semibold mb-4">AI-Powered Debugging</h3>
-            <p className="text-gray-700">
-              Ducki’s AI not only explains code but also helps identify potential bugs, offering detailed debugging information with every explanation.
-            </p>
-          </div>
-          <div className="feature-card p-6 bg-white rounded-lg shadow-lg">
-            <h3 className="text-2xl font-semibold mb-4">Seamless IDE Integration</h3>
-            <p className="text-gray-700">
-              Ducki integrates smoothly with all major IDEs like VSCode, JetBrains, and Sublime, ensuring you get instant insights wherever you code.
-            </p>
-          </div>
-          <div className="feature-card p-6 bg-white rounded-lg shadow-lg">
-            <h3 className="text-2xl font-semibold mb-4">Multi-Language Support</h3>
-            <p className="text-gray-700">
-              With support for languages such as Python, JavaScript, C++, and more, Ducki is designed to assist across various tech stacks.
-            </p>
-          </div>
-          <div className="feature-card p-6 bg-white rounded-lg shadow-lg">
-            <h3 className="text-2xl font-semibold mb-4">Deep Learning Technology</h3>
-            <p className="text-gray-700">
-              Built on deep learning models, Ducki’s AI continually learns from millions of code snippets to improve accuracy and explanations.
-            </p>
-          </div>
-        </div>
-      </div>
+      <div className="relative min-h-screen bg-[#fff5c3] text-black flex flex-col justify-center items-center snap-start">
+  <h2 className="text-5xl font-bold text-center mt-20">Features</h2>
+  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 max-w-7xl mx-auto mt-12 px-8">
+    
+    {/* Feature Card 1 */}
+    <div className="feature-card p-6 bg-gradient-to-r from-yellow-400 to-yellow-500 rounded-lg shadow-2xl transform hover:scale-105 transition-all duration-300">
+      <h3 className="text-3xl font-semibold mb-4">Real-Time Code Explanation</h3>
+      <p className="text-black-100">
+        Ducki AI instantly analyzes your code and provides real-time explanations when you hover over problematic or complex code.
+      </p>
+    </div>
+
+    {/* Feature Card 2 */}
+    <div className="feature-card p-6 bg-gradient-to-r from-yellow-400 to-yellow-500 rounded-lg shadow-2xl transform hover:scale-105 transition-all duration-300">
+      <h3 className="text-3xl font-semibold mb-4">Context-Aware Suggestions</h3>
+      <p className="text-black-100">
+        Powered by advanced natural language processing (NLP) models, Ducki understands the context of your code to offer relevant suggestions.
+      </p>
+    </div>
+
+    {/* Feature Card 3 */}
+    <div className="feature-card p-6 bg-gradient-to-r from-yellow-400 to-yellow-500 rounded-lg shadow-2xl transform hover:scale-105 transition-all duration-300">
+      <h3 className="text-3xl font-semibold mb-4">AI-Powered Debugging</h3>
+      <p className="text-black-100">
+        Ducki’s AI not only explains code but also helps identify potential bugs, offering detailed debugging information with every explanation.
+      </p>
+    </div>
+
+    {/* Feature Card 4 */}
+    <div className="feature-card p-6 bg-gradient-to-r from-yellow-400 to-yellow-500 rounded-lg shadow-2xl transform hover:scale-105 transition-all duration-300">
+      <h3 className="text-3xl font-semibold mb-4">Seamless IDE Integration</h3>
+      <p className="text-black-100">
+        Ducki integrates smoothly with all major IDEs like VSCode, JetBrains, and Sublime, ensuring you get instant insights wherever you code.
+      </p>
+    </div>
+
+    {/* Feature Card 5 */}
+    <div className="feature-card p-6 bg-gradient-to-r from-yellow-400 to-yellow-500 rounded-lg shadow-2xl transform hover:scale-105 transition-all duration-300">
+      <h3 className="text-3xl font-semibold mb-4">Multi-Language Support</h3>
+      <p className="text-black-100">
+        With support for languages such as Python, JavaScript, C++, and more, Ducki is designed to assist across various tech stacks.
+      </p>
+    </div>
+
+    {/* Feature Card 6 */}
+    <div className="feature-card p-6 bg-gradient-to-r from-yellow-400 to-yellow-500 rounded-lg shadow-2xl transform hover:scale-105 transition-all duration-300">
+      <h3 className="text-3xl font-semibold mb-4">Deep Learning Technology</h3>
+      <p className="text-black-100">
+        Built on deep learning models, Ducki’s AI continually learns from millions of code snippets to improve accuracy and explanations.
+      </p>
+    </div>
+    
+  </div>
+</div>
     </div>
   );
 }
