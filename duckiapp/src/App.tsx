@@ -133,6 +133,30 @@ function App() {
     </div>
     
   </div>
+  {/* Team Section */}
+<div id="team" className="relative min-h-screen bg-[#fff5c3] text-black flex flex-col justify-center items-center snap-start">
+  <h2 className="text-5xl font-bold text-center mt-20">Our Team</h2>
+  <div className="grid grid-cols-1 sm:grid-cols-2 gap-12 max-w-7xl mx-auto mt-12 px-8">
+    
+    {/* Rohan Dhanam */}
+    <div className="team-card p-6 bg-gradient-to-r from-yellow-400 to-yellow-500 rounded-lg shadow-2xl transform hover:scale-105 transition-all duration-300">
+      <h3 className="text-3xl font-semibold mb-4">Rohan Dhanam</h3>
+      <p className="text-black-100">
+        Hey! I'm Rohan, a co-founder at Ducki. My work consists of maintaining the fullstack applications of our extension.
+      </p>
+    </div>
+
+    {/* Aryan Vasudevan */}
+    <div className="team-card p-6 bg-gradient-to-r from-yellow-400 to-yellow-500 rounded-lg shadow-2xl transform hover:scale-105 transition-all duration-300">
+      <h3 className="text-3xl font-semibold mb-4">Aryan Vasudevan</h3>
+      <p className="text-black-100">
+        Aryan, co-founder of Ducki, specializes in integrating AI into developer tools, helping make code explanation easier for developers.
+      </p>
+    </div>
+
+  </div>
+</div>
+
 </div>
     </div>
   );
