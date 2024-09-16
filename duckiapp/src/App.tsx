@@ -1,7 +1,8 @@
   import React, { useState, useEffect } from 'react';
+  
 
 function App() {
-    const words = ['that code', 'those lines', 'that syntax error'];
+    const words = ['that code', 'that line', 'that syntax error'];
     const [currentWord, setCurrentWord] = useState('');
     const [wordIndex, setWordIndex] = useState(0);
     const [isDeleting, setIsDeleting] = useState(false);
@@ -43,25 +44,40 @@ function App() {
           <div className="absolute bottom-20 right-20 w-40 h-40 rounded-full bg-yellow-300 opacity-50 animate-orb2"></div>
 
           {/* Main Content */}
-          <nav className="absolute top-0 left-0 right-0 py-6 px-8 flex justify-between items-center">
-    <div className="text-3xl font-semibold transition-transform transform hover:scale-110 cursor-pointer">
-      ducki
-    </div>
-    <div className="space-x-6">
-    <button onClick={() => document.getElementById('mission')?.scrollIntoView({ behavior: 'smooth' })} className="text-gray-700 hover:text-gray-900 transition-colors duration-300">
-        Our Mission
-      </button>
-      <button onClick={() => document.getElementById('features')?.scrollIntoView({ behavior: 'smooth' })} className="text-gray-700 hover:text-gray-900 transition-colors duration-300">
-        Learn More
-      </button>
-      <button onClick={() => document.getElementById('team')?.scrollIntoView({ behavior: 'smooth' })} className="text-gray-700 hover:text-gray-900 transition-colors duration-300">
-        Our Team
-      </button>
-      <button className="px-4 py-2 rounded-full bg-yellow-400 text-white hover:bg-yellow-500 transition-colors duration-300">
-        Get Started
-      </button>
-    </div>
-  </nav>
+          \<nav className="fixed top-0 left-0 right-0 py-6 px-8 flex justify-between items-center bg-transparent z-50">
+          <div className="text-3xl font-semibold transition-transform transform hover:scale-110 cursor-pointer">
+            ducki
+          </div>
+          <div className="space-x-6">
+            <button
+              onClick={() =>
+                document.getElementById('mission')?.scrollIntoView({ behavior: 'smooth' })
+              }
+              className="text-gray-700 hover:text-gray-900 transition-colors duration-300"
+            >
+              Our Mission
+            </button>
+            <button
+              onClick={() =>
+                document.getElementById('features')?.scrollIntoView({ behavior: 'smooth' })
+              }
+              className="text-gray-700 hover:text-gray-900 transition-colors duration-300"
+            >
+              Learn More
+            </button>
+            <button
+              onClick={() =>
+                document.getElementById('team')?.scrollIntoView({ behavior: 'smooth' })
+              }
+              className="text-gray-700 hover:text-gray-900 transition-colors duration-300"
+            >
+              Our Team
+            </button>
+            <button className="px-4 py-2 rounded-full bg-yellow-400 text-white hover:bg-yellow-500 transition-colors duration-300">
+              Get Started
+            </button>
+          </div>
+        </nav>
 
 
           <div className="flex flex-col items-center text-center z-10">
