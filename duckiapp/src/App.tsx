@@ -44,7 +44,7 @@ function App() {
           <div className="absolute bottom-20 right-20 w-40 h-40 rounded-full bg-yellow-300 opacity-50 animate-orb2"></div>
 
           {/* Main Content */}
-          \<nav className="fixed top-0 left-0 right-0 py-6 px-8 flex justify-between items-center bg-transparent z-50">
+          <nav className="fixed top-0 left-0 right-0 py-6 px-8 flex justify-between items-center bg-[#fff5c3] bg-opacity-0gi shadow-xl z-50">
           <div className="text-3xl font-semibold transition-transform transform hover:scale-110 cursor-pointer">
             ducki
           </div>
