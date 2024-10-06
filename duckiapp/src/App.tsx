@@ -40,9 +40,9 @@ function App() {
   };
 
   return (
-    <div className={`w-full h-full overflow-x-hidden ${isDarkMode ? 'dark' : ''}`}>
+    <div className={`w-full h-full overflow-x-hidden ${isDarkMode ? 'dark' : ''} ${isDarkMode ? 'dark bg-gray-900 text-gray-200' : 'bg-[#fff5c3] text-gray-900'}`}>
       {/* Landing Page */}
-      <div className={`relative min-h-screen ${isDarkMode ? 'bg-gray-900 text-gray-200' : 'bg-[#fff5c3] text-gray-900'} flex flex-col justify-center items-center snap-start`}>
+      <div className={`relative min-h-screen flex flex-col justify-center items-center snap-start`}>
         {/* Background Orbs with Animations */}
         <div className={`absolute top-10 left-10 w-32 h-32 rounded-full ${isDarkMode ? 'bg-yellow-600' : 'bg-yellow-400'} opacity-50 animate-orb1`}></div>
         <div className={`absolute bottom-20 right-20 w-40 h-40 rounded-full ${isDarkMode ? 'bg-yellow-500' : 'bg-yellow-300'} opacity-50 animate-orb2`}></div>
@@ -104,8 +104,8 @@ function App() {
         </p>
       </div>
           {/* Our Mission Page */}
-          <div id="mission" className="relative min-h-screen bg-[#fff5c3] text-gray-900 flex flex-col justify-center items-center snap-start px-6 py-20">
-  <h2 className="text-6xl font-bold mb-10 tracking-wide text-cente  transition-transform transform hover:scale-110 duration-300">Our Mission</h2>
+          <div id="mission" className={`relative min-h-screen ${isDarkMode ? 'bg-gray-900 text-gray-200' : 'bg-[#fff5c3] text-gray-900'} flex flex-col justify-center items-center snap-start px-6 py-20`}>
+  <h2 className="text-6xl font-bold mb-10 tracking-wide text-center  transition-transform transform hover:scale-110 duration-300">Our Mission</h2>
   
   <p className="text-lg max-w-3xl text-center mt-4 leading-relaxed text-gray-800">
     Ducki aims to simplify coding for developers by providing instant explanations and insights into complex code, making debugging more efficient and coding easier. Our mission is to integrate AI into developer tools, enhancing productivity through real-time code analysis and context-aware suggestions.
@@ -120,7 +120,7 @@ function App() {
           
 
           {/* Features Page */}
-          <div id="features" className="relative min-h-screen bg-[#fff5c3] ${isDarkMode ?  text-black  flex flex-col justify-center items-center snap-start">
+          <div id="features" className={`relative min-h-screen ${isDarkMode ? 'bg-gray-900 text-gray-200' : 'bg-[#fff5c3] text-gray-900'} flex flex-col justify-center items-center snap-start`}>
       <h2 className="text-5xl font-bold text-center mt-20">Features</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 max-w-7xl mx-auto mt-12 px-8">
         
@@ -150,9 +150,9 @@ function App() {
 
         {/* Feature Card 4 */}
         <div className="feature-card p-6 bg-gradient-to-r from-yellow-400 to-yellow-500 rounded-lg shadow-2xl transform hover:scale-105 transition-all duration-300">
-          <h3 className="text-3xl font-semibold mb-4">Seamless IDE Integration</h3>
+          <h3 className="text-3xl font-semibold mb-4">Customizable Themes</h3>
           <p className="text-black-100">
-            Ducki integrates smoothly with all major IDEs like VSCode, JetBrains, and Zed ensuring you get instant insights wherever you code.
+            Choose from various themes, including a dark mode to suit your preferences and reduce eye strain during late-night coding sessions.
           </p>
         </div>
 
@@ -160,50 +160,41 @@ function App() {
         <div className="feature-card p-6 bg-gradient-to-r from-yellow-400 to-yellow-500 rounded-lg shadow-2xl transform hover:scale-105 transition-all duration-300">
           <h3 className="text-3xl font-semibold mb-4">Multi-Language Support</h3>
           <p className="text-black-100">
-            With support for languages such as Python, JavaScript, C++, and more, Ducki is designed to assist across various tech stacks.
+            Ducki supports a wide range of programming languages, offering explanations and suggestions tailored to the specific language you're using.
           </p>
         </div>
 
         {/* Feature Card 6 */}
         <div className="feature-card p-6 bg-gradient-to-r from-yellow-400 to-yellow-500 rounded-lg shadow-2xl transform hover:scale-105 transition-all duration-300">
-          <h3 className="text-3xl font-semibold mb-4">Deep Learning Technology</h3>
+          <h3 className="text-3xl font-semibold mb-4">Seamless IDE Integration</h3>
           <p className="text-black-100">
-            Built on deep learning models, Ducki’s AI continually learns from millions of code snippets to improve accuracy and explanations.
+            Easily integrate Ducki into your preferred IDE with simple, one-click installation, and start coding more efficiently right away.
           </p>
         </div>
-        
       </div>
-      {/* Team Section */}
-    <div id="team" className="relative min-h-screen bg-[#fff5c3] text-black flex flex-col justify-center items-center snap-start">
-      <h2 className="text-5xl font-bold text-center mt-20">Our Team</h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-12 max-w-7xl mx-auto mt-12 px-8">
-        
-        {/* Rohan Dhanam */}
+    </div>
+
+          {/* Our Team */}
+          <div id="team" className={`relative min-h-screen ${isDarkMode ? 'bg-gray-900 text-gray-200' : 'bg-[#fff5c3] text-gray-900'} flex flex-col justify-center items-center snap-start`}>
+      <h2 className="text-5xl font-bold text-center mt-20">Meet the Team</h2>
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 max-w-7xl mx-auto mt-12 px-8">
         <div className="team-card p-6 bg-gradient-to-r from-yellow-400 to-yellow-500 rounded-lg shadow-2xl transform hover:scale-105 transition-all duration-300">
           <h3 className="text-3xl font-semibold mb-4">Rohan Dhanam</h3>
-          <p className="text-black-100">
-            Hey! I'm Rohan, a co-founder at Ducki. My work consists of maintaining the fullstack applications of our extension.
-          </p>
+          <p>Co-Founder, Lead Developer</p>
         </div>
-
-        {/* Aryan Vasudevan */}
         <div className="team-card p-6 bg-gradient-to-r from-yellow-400 to-yellow-500 rounded-lg shadow-2xl transform hover:scale-105 transition-all duration-300">
           <h3 className="text-3xl font-semibold mb-4">Aryan Vasudevan</h3>
-          <p className="text-black-100">
-            Aryan, co-founder of Ducki, specializes in integrating AI into developer tools, helping make code explanation easier for developers.
-          </p>
+          <p>Co-Founder, Product Designer</p>
         </div>
-
+        <div className="team-card p-6 bg-gradient-to-r from-yellow-400 to-yellow-500 rounded-lg shadow-2xl transform hover:scale-105 transition-all duration-300">
+          <h3 className="text-3xl font-semibold mb-4">Advay Chandorkar</h3>
+          <p>Co-Founder, Backend Engineer</p>
+        </div>
       </div>
-      
     </div>
 
     </div>
-        </div>
-      );
-    }
+  );
+}
 
-    export default App;
-
-
-  
+export default App;
