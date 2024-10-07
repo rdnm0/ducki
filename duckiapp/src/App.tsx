@@ -107,7 +107,7 @@ function App() {
           <div id="mission" className={`relative min-h-screen ${isDarkMode ? 'bg-gray-900 text-gray-200' : 'bg-[#fff5c3] text-gray-900'} flex flex-col justify-center items-center snap-start px-6 py-20`}>
   <h2 className="text-6xl font-bold mb-10 tracking-wide text-center  transition-transform transform hover:scale-110 duration-300">Our Mission</h2>
   
-  <p className="text-lg max-w-3xl text-center mt-4 leading-relaxed text-gray-800">
+  <p className= "text-lg max-w-3xl text-center mt-4 leading-relaxed  ">
     Ducki aims to simplify coding for developers by providing instant explanations and insights into complex code, making debugging more efficient and coding easier. Our mission is to integrate AI into developer tools, enhancing productivity through real-time code analysis and context-aware suggestions.
   </p>
 
