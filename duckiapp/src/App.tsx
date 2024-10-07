@@ -125,7 +125,7 @@ function App() {
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 max-w-7xl mx-auto mt-12 px-8">
         
         {/* Feature Card 1 */}
-        <div className="feature-card p-6 bg-gradient-to-r from-yellow-400 to-yellow-500 rounded-lg shadow-2xl transform hover:scale-105 transition-all duration-300">
+        <div className="feature-card p-6 bg-gradient-to-r  from-yellow-400 to-yellow-500 rounded-lg shadow-2xl transform hover:scale-105 transition-all duration-300">
           <h3 className="text-3xl font-semibold mb-4">Real-Time Code Explanation</h3>
           <p className="text-black-100">
             Ducki AI instantly analyzes your code and provides real-time explanations when you hover over problematic or complex code.
@@ -176,22 +176,22 @@ function App() {
 
           {/* Our Team */}
           <div id="team" className={`relative min-h-screen ${isDarkMode ? 'bg-gray-900 text-gray-200' : 'bg-[#fff5c3] text-gray-900'} flex flex-col justify-center items-center snap-start`}>
-      <h2 className="text-5xl font-bold text-center mt-20">Meet the Team</h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 max-w-7xl mx-auto mt-12 px-8">
-        <div className="team-card p-6 bg-gradient-to-r from-yellow-400 to-yellow-500 rounded-lg shadow-2xl transform hover:scale-105 transition-all duration-300">
-          <h3 className="text-3xl font-semibold mb-4">Rohan Dhanam</h3>
-          <p>Co-Founder, Lead Developer</p>
-        </div>
-        <div className="team-card p-6 bg-gradient-to-r from-yellow-400 to-yellow-500 rounded-lg shadow-2xl transform hover:scale-105 transition-all duration-300">
-          <h3 className="text-3xl font-semibold mb-4">Aryan Vasudevan</h3>
-          <p>Co-Founder, Product Designer</p>
-        </div>
-        <div className="team-card p-6 bg-gradient-to-r from-yellow-400 to-yellow-500 rounded-lg shadow-2xl transform hover:scale-105 transition-all duration-300">
-          <h3 className="text-3xl font-semibold mb-4">Advay Chandorkar</h3>
-          <p>Co-Founder, Backend Engineer</p>
+        <h2 className="text-5xl font-bold text-center mt-20">Meet the Team</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 max-w-7xl mx-auto mt-12 px-8">
+          <div className="team-card p-6 bg-gradient-to-r from-yellow-400 to-yellow-500 rounded-lg shadow-2xl transform hover:scale-105 transition-all duration-300">
+            <h3 className={`text-3xl font-semibold mb-4 ${isDarkMode ? 'text-black' : ''}`}>Rohan Dhanam</h3>
+            <p className={`${isDarkMode ? 'text-black' : ''}`}>Co-Founder, Lead Developer</p>
+          </div>
+          <div className="team-card p-6 bg-gradient-to-r from-yellow-400 to-yellow-500 rounded-lg shadow-2xl transform hover:scale-105 transition-all duration-300">
+            <h3 className={`text-3xl font-semibold mb-4 ${isDarkMode ? 'text-black' : ''}`}>Aryan Vasudevan</h3>
+            <p className={`${isDarkMode ? 'text-black' : ''}`}>Co-Founder, Product Designer</p>
+          </div>
+          <div className="team-card p-6 bg-gradient-to-r from-yellow-400 to-yellow-500 rounded-lg shadow-2xl transform hover:scale-105 transition-all duration-300">
+            <h3 className={`text-3xl font-semibold mb-4 ${isDarkMode ? 'text-black' : ''}`}>Advay Chandorkar</h3>
+            <p className={`${isDarkMode ? 'text-black' : ''}`}>Co-Founder, Backend Engineer</p>
+          </div>
         </div>
       </div>
-    </div>
 
     </div>
   );
