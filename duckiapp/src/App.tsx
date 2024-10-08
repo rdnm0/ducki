@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faMoon, faSun } from '@fortawesome/free-solid-svg-icons';
 
 function App() {
   const words = ['that code', 'that line', 'that syntax error'];
@@ -76,9 +78,9 @@ function App() {
             </button>
             <button
               onClick={handleToggleDarkMode}
-              className={`ml-4 px-4 py-2 rounded-full ${isDarkMode ? 'bg-gray-700 hover:bg-gray-800' : 'bg-gray-300 hover:bg-gray-400'} text-gray-900 dark:text-white transition-colors duration-300`}
+              className={`ml-4 px-4 py-2 rounded-full ${isDarkMode ? 'bg-yellow hover:bg-gray-800' : 'bg-black hover:bg-gray-400'} text-gray-900 dark:text-white transition-colors duration-300`}
             >
-              {isDarkMode ? 'Light Mode' : 'Dark Mode'}
+              <FontAwesomeIcon icon={isDarkMode ? faSun : faMoon} />
             </button>
           </div>
         </nav>
